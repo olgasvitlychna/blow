@@ -1,5 +1,104 @@
-.lol {
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+.main_section {
+  background-image: url("../images/BLOW_03.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main_section header {
+  position: fixed;
+  top: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+@media screen and (max-width: 767px) {
+  .main_section header {
+    flex-direction: column;
+    justify-content: space-between;
+    top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.main_section header .logo a {
+  text-decoration: none;
+  font: 40px "Montserrat", sans-serif;
+  font-weight: 900;
+  color: black;
+}
+@media screen and (max-width: 767px) {
+  .main_section header .logo {
+    order: 2;
+  }
+}
+.main_section header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.main_section header nav ul li {
+  list-style: none;
+}
+.main_section header nav ul li a {
+  display: block;
+  text-decoration: none;
+  font: 22px/41px "Montserrat", sans-serif;
+  color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  height: 41px;
+}
+.main_section header nav ul li a:hover {
+  background-color: black;
+  color: white;
+  height: 41px;
+}
+@media screen and (max-width: 767px) {
+  .main_section header nav {
+    order: 1;
+  }
+}
+.main_section .btn {
+  position: relative;
+  top: 80%;
+  margin: auto;
+  z-index: 3;
+  border-radius: 30px;
+  background-color: black;
+  width: 300px;
+}
+.main_section .btn a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font: 20px/60px "Montserrat", sans-serif;
+  color: #f0cdac;
+  width: 300px;
+  background-color: black;
+  border-radius: 30px;
+  width: 300px;
+  height: 60px;
+  text-transform: uppercase;
+}
+
+aside {
   background-color: white;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  height: 120px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+aside h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #b2b2b2;
+  font: 22px/120px "Montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
